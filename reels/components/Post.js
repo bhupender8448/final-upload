@@ -31,9 +31,16 @@ function Post({postData, userData}) {
     }
 
 
+    const handleClick = (e) => {
+      e.preventDefault();
+      e.target.muted = !e.target.muted
+    }
+
+    
+
   return (
     <div className="post-container">
-          <video src={postData.postUrl}/>
+          <video src={postData.postUrl} autoPlay muted="muted" onClick={handleClick} />
           <div className="videos-info">
             <div className="avatar_container">
                 <Avatar alt="Remy Sharp" src={postData.profileUrl} sx={{margin:"0.5rem"}}/>

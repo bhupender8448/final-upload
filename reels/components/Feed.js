@@ -51,9 +51,9 @@ function Feed() {
       {/* reels */}
       <div className="videos-container">
         {
-          posts.map((post) => {
+          posts.map((post) => (
             <Post postData={post} userData={userData}/>
-          })
+          ))
         }
          </div>
     </div>
