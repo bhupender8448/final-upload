@@ -44,11 +44,7 @@
 
 
 
-// const auth = getAuth();
-// const storage = getStorage();
-// const db = getFirestore();
-// export { auth,storage,db }
-// export default app;
+
 
 
 
@@ -93,3 +89,10 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
+
+
+const auth = getAuth();
+const storage = getStorage();
+const db = getFirestore();
+export { auth,storage,db }
+export default app;
